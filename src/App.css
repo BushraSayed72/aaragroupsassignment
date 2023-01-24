@@ -1,571 +1,641 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  background:rgb(26, 25, 25);
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-:root{
-  
+body {
+  background: rgb(26, 25, 25);
 }
-.navbar{
-  color:white;
-  display:flex;
+.main-nav {
+  position: relative;
+}
+.navbar {
+  color: white;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
   border: 1px solid white;
   padding: 1rem;
-
-
+  width: 87%;
 }
-.nav-icon{
+.navbar.active {
+  margin-left: 200px;
+}
+.nav-icon {
   height: 30px;
 }
-.aara{
-  font-size: 2rem;
+.aara {
+  color: #fff;
+  font-size: 1.25rem;
   font-weight: 700;
- 
-  height:4rem;
-  width:13rem;
+  background-color: rgb(79, 78, 78);
+  height: 4rem;
+  width: 13rem;
   text-align: center;
-  padding-top:10px;
+  padding-top: 15px;
+  width: 100%;
+  margin-top: 30px;
+  /* margin-bottom: 19px; */
+  /* padding-bottom: 34px; */
+  border-bottom: 1px solid #eee;
+  height: 74px;
+}
+.aara p {
+  background-color: rgb(79, 78, 78);
 }
 
-.left-nav{
+.left-nav {
   display: flex;
   align-items: center;
   justify-items: center;
-  
 }
-.dashleft{
-  padding:2rem;
+.dashleft {
+  padding: 1.25rem;
   display: flex;
   align-items: center;
 }
-.right-nav{
+.right-nav {
   display: flex;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
   position: relative;
 }
-.arrownav{
-  height:30px;
-  width:30px;
+.arrownav {
+  height: 30px;
+  width: 30px;
   background-color: orange;
   padding: 5px 5px;
   position: absolute;
-  left:14rem;
-
+  left: 187px;
+  top: 35px;
 }
-.dashleft p{
-  font-size: 2rem;
+.dashleft p {
+  font-size: 1.25rem;
   font-weight: 400;
 }
-.arrowOr{
+.arrowOr {
   background-color: orange;
-  
 }
-.boy{
-  width:40px;
-  height:40px;
+.boy {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
-.dashright{
-  font-size: 1.2rem;
+.dashright {
+  font-size: 1rem;
   font-weight: 500;
 }
-.super{
+.super {
   font: 200;
   font-size: 1rem;
-  color:grey ;
+  color: grey;
+}
+.sidebar-open {
+  margin-left: 200px;
 }
 /* =====================================home============================= */
-.home{
-  color:white;
-  padding: 0 1rem 0 1rem;
+.home {
+  color: white;
+  padding: 0 5px 0 5px;
   display: flex;
-  align-items:baseline;
-  
+  align-items: baseline;
+  width: 85%;
 }
-.lefthome{
-  border:1px solid white;
+.lefthome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  border: 1px solid white;
   background-color: rgb(79, 78, 78);
-  height:900px;
+  height: 950px;
   border-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:1rem;
-  width:20%;
+  gap: 1rem;
+  width: 200px;
+  border-radius: 5px;
 }
-.left-links{
-  color:white;
+.lefthome.active {
+  margin-left: -180px;
+}
+.left-links {
+  color: white;
   background-color: rgb(79, 78, 78);
   display: flex;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
 }
 .left-links:hover,
-.left-links:active
-  { color: orange;
-
+.left-links:active {
+  color: orange;
 }
 
-
-.leftside{
+.leftside {
   background-color: rgb(79, 78, 78);
   display: flex;
   align-items: center;
-  gap:1rem;
+  gap: 1rem;
   padding: 10px;
+  width: 100%;
 }
-.leftside p{
-  background-color: rgb(79, 78, 78);
-
-}
- .orangelist{
-  color:orange;
-  font-size: 1.2rem;
+.leftside p {
   background-color: rgb(79, 78, 78);
 }
-.icn{
+.orangelist a {
+  color: orange;
+  font-size: 1rem;
   background-color: rgb(79, 78, 78);
-  }
-  /* ========================Home======================== */
-  .rightHome{
-    padding:5px;
-  }
-  .average{
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding-bottom: 1rem;
-    padding-left:1rem;
-  }
-  .right1stdiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:6px;
-    
-    
-  }
-  .snddiv{
-    display:flex;
-    align-items: center;
-    
-  }
-  .frstdivContainer{
-    border-radius: 10px;
-    border: 1px solid black;
-    border-style: none;
-    padding-top: 1rem; 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap:4rem;
-    background-color: rgb(71, 67, 67);
-    padding:1rem;
-    box-shadow: 5px 3px 5px rgb(68, 66, 66);
-    width:62vw;
-    margin-left: 10px;
-
-  }
-  .column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1rem;
-    background-color: rgb(71, 67, 67);
-  }
-  .column p{
-    background-color:  rgb(71, 67, 67);
-
-
-  }
-  .same{
-    color:rgb(237, 214, 214);
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .sameorange{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: orange;
-  }
-  .buttons{
-    padding:0 2rem 2rem 2rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:2rem;
-   
-  }
-  .buttons button{
-    height:2.5rem;
-    width:7rem;
-    border-radius: 5px;
-    border:1px solid orange;
-    box-shadow: 2px 3px 2px  orange;
-    background-color: rgb(31, 31, 31);
-    color:white;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  /* =======================================home Right Second================================================= */
-  .flexrightdiv{
-    display: flex;
-    align-items: center;
-    
-  }
-  .leftcontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  .right2nd{
-    display:flex;
-    align-items: center;
-    margin:5px;
-  }
-  .card{
-    margin:1rem;
-    border: 1px solid orange;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    border-style: none;
-    box-shadow: -2px -2px 2px orange;
-    padding:1rem;
-    background-color:rgb(71, 67, 67) ;
-    width: 19vw;
-   
-
-
-  }
-  .card1st{
-    display: flex;
-    align-items: center;
-    gap:10px;
-    background-color:rgb(71, 67, 67) ;
-  }
-  .card2nd{
-    background-color:rgb(71, 67, 67) ;
-    padding-top: 1rem;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap:1rem;
-    font-size: 1.3rem;
-    margin: 1rem;
-  }
-  .grey{
-    background-color:rgb(71, 67, 67) ;
-  }
-  .graphcard{
-    border: 1px solid black;
-    background-color:rgb(71, 67, 67) ;
-    box-shadow: -2px -2px 2px orange;
-    display: flex;
-    flex-direction: column;
-    border-style: none;
-    width:30vw;
-    height:23rem;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 5px 
-
-    
-  }
-  .cardicon{
-    background-color:rgb(71, 67, 67) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:7rem;
-    width: fit-content;
-
-  }
-  .orange{
-    color: orange;
-    width:30px;
-    background-color:rgb(71, 67, 67) ;
-  }
-  .listCard{
-    background-color:rgb(71, 67, 67) ;
-    display: flex;
-    align-items: center;
-    gap:2rem;
-   
-  }
-   .listCard li{
-    display: flex;
-    align-items: center;
-    gap:2px;
-    background-color:rgb(71, 67, 67) ;
-  
-  }
-  .orange{
-    color:orange;
-    background-color:rgb(71, 67, 67) ;
-  }
-  
-  .circle{
-    height:7px;
-    color: orange;
-    background-color:rgb(71, 67, 67) ;
-  }
-  .orangelist{
-    color:orange;
-    font-weight: 500;
-    background-color:rgb(71, 67, 67) ;
-  
-    
-  }
-  .borderlist{
-    padding-left:4px;
-    border:1px solid orange;
-    border-radius: 15px;
-    box-shadow: 2px 2px  orange;
-    color:white;
-    width: 10rem;
-    height: 2rem;
-    background-color:rgb(71, 67, 67) ;
-  
-  }
-  .greenlist{
-    color: green;
-    background-color:rgb(71, 67, 67) ;
-    
-    font-weight: 500;
-  }
-  /* ===============piechart==================================== */
-  .summaryChart {
-   height:10rem;
-   width:10rem;
-   border-radius: 50%;
-   border: orange;
-   background-color: orange;
-   
-   
-   
-  }
-  
-    
-      .smallcards{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap:2rem;
-        background-color:rgb(71, 67, 67) ;
-        margin-top:5rem;
-        gap:3rem;
-      }
-      .smallcard{
-        background:  rgb(79, 78, 78);
-        width: 150px;
-        height: 180px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:1rem;
-        padding: 1rem;
-
-      }
-      .smallcard p{
-        background: rgb(79, 78, 78) ;
-      }
-      .grrey{
-        background-color: rgb(39, 36, 36);
-      }
-      .iconbrdr{
-         height: 2.5rem;
-         width:2rem;
-         border:1px solid black ;
-         border-style: none;
-         border-radius: 5px;
-         background-color: rgb(39, 36, 36);
-      }
-      .this{
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-      /* ==========================lastrighthome======================= */
-      .rightcontainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:left;
-        border: 1px solid grey;
-        border-radius: 5px;
-        width: 30%;
-        height:40rem;
-        box-shadow: -5px -5px orange;
-        border-style: none;
-        gap:2rem;
-        background-color:rgb(71, 67, 67) ;
-      }
-      .topbrdr{
-
-        background-color:rgb(71, 67, 67) ;
-        display: flex;
-        justify-content: left;
-        border: 1px solid orange;
-        border-radius: 5px;
-        text-align: left;
-        width: 15rem;
-        margin: 2rem 1rem 1rem 2rem;
-        height:2rem;
-        padding: 5px;
-        box-shadow: -2px -2px 2px orange ;
-      }
-      .topbrdr p{
-        background-color:rgb(71, 67, 67) ;
-
-      }
-      .homerightlst{
-        width:15rem;
-        height:4rem;
-        padding:10px;
-        display: flex;
-        justify-content: left;
-        border: 1px solid orange;
-        border-radius: 5px;
-        gap:1rem;
-        box-shadow: -2px -2px 2px orange ;
-        background-color:rgb(71, 67, 67) ;
-
-      }
-      .info{
-        background-color:rgb(71, 67, 67) ;
-      }
-      .info p{
-        background-color:rgb(71, 67, 67) ;
-      }
-/* ================================RightClient====================== */
-
-.client{
-  display: flex;
-  align-items:center;
-  justify-content: flex-start;
- color: white;
- gap: 4rem;
- 
-
- 
 }
-.leftclient{
-  width:100%;
-  height:100%;
-  display: flex;
- flex-direction: column;
- gap:2rem;
- align-items: center;
- 
+.icn {
+  background-color: rgb(79, 78, 78);
 }
-.clientContentR{
-  padding-left: 2rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  gap:2rem;
-  
- 
-
- 
+/* ========================Home======================== */
+.rightHome {
+  padding: 5px;
 }
-.topcrd{
-  padding-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: rgb(71, 67, 67) ;
+.average {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
-.topcrd p{
-  font-size: 1.2rem;
-  font-weight:700 ;
- 
-}
-.rightclient{
+.right1stdiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: rgb(71, 67, 67) ;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: -3px -3px orange;
- 
-  padding: 1rem;
- 
+  gap: 6px;
 }
-.userinfo{
-  margin-top: 1rem;
-  padding:1rem;
-display: flex;
-flex-direction: column;
+.snddiv {
+  display: flex;
+  align-items: center;
+}
+.frstdivContainer {
+  border-radius: 10px;
+  border: 1px solid black;
+  border-style: none;
+  padding-top: 1rem;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(71, 67, 67)  ;
-  gap:2rem;
+  gap: 4rem;
+  background-color: rgb(71, 67, 67);
+  padding: 1rem;
+  box-shadow: 5px 3px 5px rgb(68, 66, 66);
+  width: 62vw;
+  margin-left: 2px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(71, 67, 67);
+}
+.column p {
+  background-color: rgb(71, 67, 67);
+}
+.same {
+  color: rgb(237, 214, 214);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sameorange {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: orange;
+}
+.buttons {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.buttons button {
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 5px;
+  border: 1px solid orange;
+  box-shadow: 2px 3px 2px orange;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* =======================================home Right Second================================================= */
+.flexrightdiv {
+  display: flex;
+  align-items: center;
+}
+.leftcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right2nd {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.card {
+  margin: 8px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  box-shadow: -2px -2px 2px orange;
+  padding: 1rem;
+  background-color: rgb(71, 67, 67);
+  width: 19vw;
+}
+.card1st {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(71, 67, 67);
+}
+.card2nd {
+  background-color: rgb(71, 67, 67);
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.grey {
+  background-color: rgb(71, 67, 67);
+}
+.graphcard {
+  border: 1px solid black;
+  background-color: rgb(71, 67, 67);
+  box-shadow: -2px -2px 2px orange;
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  width: 30vw;
+  height: 23rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.cardicon {
+  background-color: rgb(71, 67, 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  width: fit-content;
+}
+.orange {
+  color: orange;
+  width: 30px;
+  background-color: rgb(71, 67, 67);
+}
+.listCard {
+  background-color: rgb(71, 67, 67);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.listCard li {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: rgb(71, 67, 67);
+}
+.orange {
+  color: orange;
+  background-color: rgb(71, 67, 67);
+}
+
+.circle {
+  height: 7px;
+  color: orange;
+  background-color: rgb(71, 67, 67);
+}
+.orangelist {
+  color: orange;
+  font-weight: 500;
+  background-color: rgb(71, 67, 67);
+}
+.borderlist {
+  padding-left: 4px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  box-shadow: 2px 2px orange;
+  color: white;
+  width: 10rem;
+  height: 1.25rem;
+  background-color: rgb(71, 67, 67);
+}
+.greenlist {
+  color: green;
+  background-color: rgb(71, 67, 67);
+
+  font-weight: 500;
+}
+/* ===============piechart==================================== */
+.summaryChart {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: orange;
+  background-color: orange;
+}
+
+.smallcards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background-color: rgb(71, 67, 67);
+  margin-top: 5rem;
+  gap: 3rem;
+}
+.smallcard {
+  background: rgb(79, 78, 78);
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.smallcard p {
+  background: rgb(79, 78, 78);
+}
+.grrey {
+  background-color: rgb(39, 36, 36);
+}
+.iconbrdr {
+  height: 2.5rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgb(39, 36, 36);
+}
+.this {
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* ==========================lastrighthome======================= */
+.rightcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40rem;
+  box-shadow: -5px -5px orange;
+  border-style: none;
+  gap: 1.25rem;
+  background-color: rgb(71, 67, 67);
+}
+.topbrdr {
+  background-color: rgb(71, 67, 67);
+  display: flex;
+  justify-content: left;
+  border: 1px solid orange;
+  border-radius: 5px;
+  text-align: left;
+  width: 15rem;
+  margin: 1.25rem 1rem 1rem 1.25rem;
+  height: 2rem;
+  padding: 5px;
+  box-shadow: -2px -2px 2px orange;
+}
+.topbrdr p {
+  background-color: rgb(71, 67, 67);
+}
+.homerightlst {
+  width: 15rem;
+  height: 4rem;
+  padding: 5px;
+  display: flex;
+  justify-content: left;
+  border: 1px solid orange;
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: -2px -2px 2px orange;
+  background-color: rgb(71, 67, 67);
+}
+.info {
+  background-color: rgb(71, 67, 67);
+}
+.info p {
+  background-color: rgb(71, 67, 67);
+}
+/* ================================RightClient====================== */
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  gap: 4rem;
+}
+.leftclient {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+.clientContentR {
+  padding-left: 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 1.25rem;
+}
+.topcrd {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgb(71, 67, 67);
+}
+.topcrd p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.rightclient {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(71, 67, 67);
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: -3px -3px orange;
- 
 
+  padding: 1rem;
 }
-.userinfo p{
-  background-color:  rgb(71, 67, 67)  ;
-}
-.maskboy{
-  border-radius: 50%;
-  height:40%;
-  width:40%;
-}
-form{
-  display: flex;
-  align-items: center;
-  gap:2rem;
-  background-color: rgb(71, 67, 67) ;
-
-}
-.column{
+.userinfo {
+  margin-top: 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-height:100%;
-align-items: left;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(71, 67, 67);
+  gap: 1.25rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: -3px -3px orange;
+}
+.userinfo p {
+  background-color: rgb(71, 67, 67);
+}
+.maskboy {
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+}
+form {
+  display: flex;
+  /* align-items: center; */
+  gap: 1.25rem;
+  background-color: rgb(71, 67, 67);
+}
+form div {
+  background-color: rgb(71, 67, 67);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: left;
 
-  background-color: rgb(71, 67, 67) ;
-  padding:1rem;
-  gap:1rem;
-  font-size: 1.2rem;
+  background-color: rgb(71, 67, 67);
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1rem;
   font-weight: 400;
-
 }
 
-.column label{
-  background-color:  rgb(71, 67, 67) ;
+.column label {
+  background-color: rgb(71, 67, 67);
 }
-.column input{
-  height: 2rem;
-  width: 15rem;
+.column input {
   border-radius: 5px;
   border: 1px solid white;
-  background-color:rgb(71, 67, 67) ;
+  background-color: rgb(71, 67, 67);
   font-size: 14px;
   font-weight: 600;
-  color:rgb(132, 124, 124)
-
+  padding: 6px;
+  color: #fff;
+  margin-top: 5px;
 }
-hr{
+.column div {
+  background-color: rgb(71, 67, 67);
+}
+hr {
   color: white;
   width: 100%;
 }
-.bottomright{
+.bottomright {
   display: flex;
   align-items: center;
 }
-      
+
+.btn-submit {
+  background-color: orange;
+  padding: 20px;
+}
+@media (max-width:768px){
+  .navbar{
+    width:120%;
+  }
+  .lefthome{
+    height:400vh;
+  }
+  .frstdivContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap:1rem;
+  }
+  .right1stdiv{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+  .flexrightdiv{
+    display:flex;
+    flex-direction: column;
+  }
+  .right2nd{
+    display:flex;
+    flex-direction: column;
+  }
+  .card{
+    width:15rem;
+  }
+  .snddiv{
+    display: flex;
+    flex-direction: column;
+  }
+  .graphcard{
+    width:25rem;
+  }
+  .card2nd{
+    gap:5px;
+  }
+  .smallcards{
+    gap:1rem;
+    margin-top: 1rem;
+  }
+  .rightcontainer{
+    width: 90%;
+    height:30rem;
+  }
+  .clientContentR{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+  .client{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+  }
+  .leftclient{
+    align-items: start;
+    margin-left: 10px;
+  }
+  form{
+   gap:10px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+
+  }
+  .column div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap:1rem;
+  }
+  .column{
+    padding: 5px;
+   
+  }
+  .bottomright{
+    display: flex;
+    flex-direction: column;
+  }
+}
