@@ -18,7 +18,8 @@ body {
   margin: 10px;
   border: 1px solid white;
   padding: 1rem;
-  width: 87%;
+  width: 90%;
+
 }
 .navbar.active {
   margin-left: 200px;
@@ -168,6 +169,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  width:100%;
+  
 }
 .snddiv {
   display: flex;
@@ -208,6 +211,7 @@ body {
   font-weight: 700;
   color: orange;
 }
+/* ====================buttons========================= */
 .buttons {
   padding: 0 1.25rem 1.25rem 1.25rem;
   display: flex;
@@ -230,6 +234,11 @@ body {
   justify-content: space-around;
   cursor:pointer;
 
+}
+.buttons button:hover,
+.buttons button:active{
+  background-color:rgb(52, 48, 48) ;
+  color: orange;
 }
 /* =======================================home Right Second================================================= */
 .flexrightdiv {
@@ -289,6 +298,7 @@ body {
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
+ position: relative;
 }
 .cardicon {
   background-color: rgb(71, 67, 67);
@@ -347,13 +357,21 @@ body {
   font-weight: 500;
 }
 /* ===============piechart==================================== */
-.summaryChart {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  border: orange;
-  background-color: orange;
+.piechart{
+ position: absolute; 
+ left:-100px;
+ margin-top: 8rem;
+ color: rgb(220, 178, 178);
+ font-size: 1.2rem;
+ font-weight: 500;
+ 
+
 }
+.container-fluid{
+  color: #fff;
+}
+ 
+
 
 .smallcards {
   display: flex;
@@ -411,17 +429,27 @@ body {
   background-color: rgb(71, 67, 67);
   display: flex;
   justify-content: left;
+
+  
+ 
+  
+ 
+}
+.topbrdr input{
+  background-color: rgb(71, 67, 67);
+  width: 15rem;
   border: 1px solid orange;
   border-radius: 5px;
   text-align: left;
-  width: 15rem;
+  box-shadow: -2px -2px 2px orange;
+  color: #ffff;
   margin: 1.25rem 1rem 1rem 1.25rem;
   height: 2rem;
   padding: 5px;
-  box-shadow: -2px -2px 2px orange;
-}
-.topbrdr p {
-  background-color: rgb(71, 67, 67);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px;
+  
 }
 .homerightlst {
   width: 15rem;
@@ -566,9 +594,15 @@ hr {
   color: #fff;
   
 }
+.btn-submit:hover,
+.btn-submit:active{
+  color:orange;
+  background-color: grey;
+
+}
 @media (max-width:768px){
   .navbar{
-    width:120%;
+    width:140%;
   }
   .lefthome{
     height:400vh;
@@ -591,6 +625,10 @@ hr {
   .right2nd{
     display:flex;
     flex-direction: column;
+  }
+  .viewbtn{
+    width: 20rem !important;
+    
   }
   .card{
     width:15rem;

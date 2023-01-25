@@ -5,6 +5,7 @@ import { MdFilterList } from "react-icons/md";
 import { BsCircle } from "react-icons/bs";
 import { MdContactPage } from "react-icons/md";
 import aara from "../Images/aaraimg.webp";
+import PieCharts from "./PieCharts";
 
 function HomeRight2nd() {
   return (
@@ -60,7 +61,7 @@ function HomeRight2nd() {
               <p className="grey"> +18 clients</p>
             </div>
             <div className="listCard">
-              <ul>
+              {/* <ul>
                 <li className="orangelist">
                   {" "}
                   <BsCircle className="circle" /> Overall Concerns
@@ -76,12 +77,10 @@ function HomeRight2nd() {
                   {" "}
                   <BsCircle className="circle" /> Resolved Concerns
                 </li>
-              </ul>
+              </ul> */}
 
-              <div className="summaryChart">
-                <div className="orangechart"></div>
-                <div className="white"></div>
-                <div className="green"></div>
+              <div className="piechart">
+                <PieCharts/>
               </div>
             </div>
           </div>
@@ -118,7 +117,7 @@ function HomeRight2nd() {
       </div>
       <div className="rightcontainer">
         <div className="topbrdr ">
-          <p>Search</p>
+          <input type='text' placeholder="Searchiv"/>
         </div>
         <div className=" homerightlst">
           <img className="boy" src={aara}></img>

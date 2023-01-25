@@ -57,7 +57,7 @@ function Client() {
               <p>Please update your oragnization logo here</p>
             </div>
             <div className="buttons">
-              <button>
+              <button className="viewbtn">
                 <AiOutlineUsergroupAdd />
                 View all
               </button>
