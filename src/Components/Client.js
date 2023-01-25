@@ -91,7 +91,7 @@ function Client() {
                 <div>
                   <label>Administrator Designantion </label>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="E.x +912222222222"
                     name="adminDesignation"
                     value={clientDetails.adminDesignation}
@@ -134,7 +134,7 @@ function Client() {
                 <div>
                   <label>Alternate Mobile Number</label>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="Ex. +91555555555"
                     name="altNum"
                     value={clientDetails.altNum}
@@ -206,7 +206,7 @@ function Client() {
                 <div>
                   <label>GSTIN</label>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="Ex. 0000000 "
                     name="gst"
                     value={clientDetails.gst}
