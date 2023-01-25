@@ -214,6 +214,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
+  cursor:pointer;
 }
 .buttons button {
   height: 2.5rem;
@@ -509,6 +510,7 @@ form {
   /* align-items: center; */
   gap: 1.25rem;
   background-color: rgb(71, 67, 67);
+  cursor: pointer;
 }
 form div {
   background-color: rgb(71, 67, 67);
@@ -554,6 +556,9 @@ hr {
 .btn-submit {
   background-color: orange;
   padding: 20px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
 }
 @media (max-width:768px){
   .navbar{
