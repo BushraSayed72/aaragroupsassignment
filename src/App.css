@@ -214,7 +214,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  cursor:pointer;
+ 
 }
 .buttons button {
   height: 2.5rem;
@@ -228,6 +228,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor:pointer;
+
 }
 /* =======================================home Right Second================================================= */
 .flexrightdiv {
