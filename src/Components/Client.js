@@ -155,7 +155,7 @@ function Client() {
                 <div>
                   <label>Employee Court</label>
                   <input
-                    type="text"
+                    type="number"
                     placeholder="Ex. 10.000 "
                     name="employeeCourt"
                     value={clientDetails.employeeCourt}
