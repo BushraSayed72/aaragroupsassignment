@@ -18,7 +18,7 @@ body {
   margin: 10px;
   border: 1px solid white;
   padding: 1rem;
-  width: 90%;
+  /* width: 90%; */
 
 }
 .navbar.active {
@@ -102,7 +102,8 @@ body {
   padding: 0 5px 0 5px;
   display: flex;
   align-items: baseline;
-  width: 85%;
+  /* width: 85%; */
+  
 }
 .lefthome {
   position: absolute;
