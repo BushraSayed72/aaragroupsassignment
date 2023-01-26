@@ -367,7 +367,16 @@ body {
  
 
 }
+.apexcharts-legend-text {
+  position: relative;
+  color: white !important;
+  font-size: 14px;
+  border:1px solid orange;
+  border-radius:10px;
+ 
+}
 .container-fluid{
+ 
   color: #fff;
 }
  

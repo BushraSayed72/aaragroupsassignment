@@ -11,6 +11,7 @@ function PieCharts() {
         type='pie'
         width={500}
         height={150}
+        color='white'
         
 
         series={[10,10,80]}
