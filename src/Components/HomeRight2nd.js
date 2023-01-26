@@ -117,7 +117,7 @@ function HomeRight2nd() {
       </div>
       <div className="rightcontainer">
         <div className="topbrdr ">
-          <input type='text' placeholder="Searchiv"/>
+          <input type='text' placeholder="Search"/>
         </div>
         <div className=" homerightlst">
           <img className="boy" src={aara}></img>
